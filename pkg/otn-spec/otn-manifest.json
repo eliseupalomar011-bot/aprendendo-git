@@ -1,0 +1,16 @@
+{
+  "schema": "trinity.otn.manifest.v1",
+  "package": {
+    "id": "com.trinity.example",
+    "name": "Example App",
+    "version": "0.1.0",
+    "type": "ohos_app",
+    "target": "openharmony"
+  },
+  "permissions": [],
+  "dependencies": [],
+  "signing": {
+    "required": true,
+    "algo": "ed25519"
+  }
+}

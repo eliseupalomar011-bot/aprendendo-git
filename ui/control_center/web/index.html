@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrinityOS Control Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cc">
+
+    <div class="header">
+      <div class="time">00:00</div>
+      <div class="title">TrinityOS Next</div>
+    </div>
+
+    <div class="tiles">
+
+      <div class="tile large">
+        <span>Power Profile</span>
+        <strong id="current">Balanced</strong>
+      </div>
+
+      <div class="tile active" onclick="setProfile('performance')">⚡ Performance</div>
+      <div class="tile" onclick="setProfile('balanced')">⚖ Balanced</div>
+      <div class="tile" onclick="setProfile('battery')">🔋 Battery</div>
+
+      <div class="tile large">
+        <span>Brightness</span>
+        <input type="range" min="0" max="100" id="brightness"
+               oninput="setBrightness(this.value)" />
+      </div>
+
+      <div class="tile large">
+        <span>Volume</span>
+        <input type="range" min="0" max="100" id="volume"
+               oninput="setVolume(this.value)" />
+        <button onclick="toggleMute()">🔇 Mute</button>
+      </div>
+
+      <div class="tile large">
+        <span>Audio Profile</span>
+        <button onclick="setAudioProfile('music')">🎵 Music</button>
+        <button onclick="setAudioProfile('game')">🎮 Game</button>
+        <button onclick="setAudioProfile('movie')">🎬 Movie</button>
+        <button onclick="setAudioProfile('call')">📞 Call</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

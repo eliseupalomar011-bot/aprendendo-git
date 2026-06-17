@@ -1,0 +1,17 @@
+{
+  "balanced": {
+    "cpu": "balanced",
+    "io": "normal",
+    "gpu": "balanced"
+  },
+  "performance": {
+    "cpu": "performance",
+    "io": "high",
+    "gpu": "high"
+  },
+  "battery": {
+    "cpu": "powersave",
+    "io": "low",
+    "gpu": "low"
+  }
+}
