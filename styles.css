@@ -1,0 +1,15 @@
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    margin: 5px;
+}
+
+.flex {
+      border: 10px solid red;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+}
